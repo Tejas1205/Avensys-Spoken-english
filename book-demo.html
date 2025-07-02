@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Offline Demo - Fluent English Hadapsar</title>
+  <meta name="description" content="Register for a free offline demo class in Spoken English at Hadapsar. Limited seats. Book now!">
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- LightGallery CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css" />
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- LightGallery CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+<!-- Contact Info Top Bar -->
+
+<!-- ✅ WhatsApp Floating Button (Circular) -->
+<a
+  href="https://wa.me/919552554510?text=Hi%2C%20I%20am%20interested%20in%20your%20Spoken%20English%20classes."
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+  title="Chat on WhatsApp"
+  class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-3xl animate-bounce transition-transform hover:scale-110"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+      <!-- header main section -->
+<header id="main-header" class="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-[96%] max-w-7xl transition-all duration-300 ease-in-out">
+  <!-- Full Header Container with Unified Background -->
+  <div class="bg-white/60 backdrop-blur-md text-green-800 shadow-md rounded-xl border border-blue-100">
+    <!-- Contact Info Top Row -->
+<div class="px-4 py-2 hidden md:flex flex-col md:flex-row md:justify-between md:items-center gap-2 border-b border-blue-100 contact-row">
+
+      <!-- Phone and Email -->
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 text-center sm:text-left">
+        <a href="tel:+919876543210" class="hover:text-blue-600">📞 +91 98765 43210</a>
+        <a href="mailto:info@spokenenglishhadapsar.com" class="hover:text-blue-600">✉️ info@spokenenglishhadapsar.com</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex justify-center md:justify-end gap-4 text-xl">
+        <a href="https://facebook.com" target="_blank" class="text-blue-500">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-pink-500">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="text-red-600">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://wa.me/919876543210" target="_blank" class="text-green-600">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Logo and Navigation Row -->
+    <div class="px-4 py-4 flex items-center justify-between logo-row">
+      <!-- Logo -->
+      <h1 class="text-xl font-bold">
+        <img src="./assets/images/logo.png" height="10px" width="200px" alt="Logo">
+      </h1>
+
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+        ☰
+      </button>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex space-x-6 text-base font-medium">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="about.html" class="hover:text-blue-500">About</a>
+        <a href="courses.html" class="hover:text-blue-500">Courses</a>
+        <a href="gallery.html" class="hover:text-blue-500">Gallery</a>
+        <a href="book-demo.html" class="hover:text-blue-500">Book Demo</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile/Tablet nav -->
+    <nav id="mobile-menu" class="md:hidden hidden flex-col bg-white/80 backdrop-blur-lg px-4 pt-2 pb-4 text-green-800 text-base font-medium shadow-md rounded-b-xl">
+      <a href="index.html" class="block py-2 border-b border-gray-200 hover:text-blue-500">Home</a>
+      <a href="about.html" class="block py-2 border-b border-gray-200 hover:text-blue-500">About</a>
+      <a href="courses.html" class="block py-2 border-b border-gray-200 hover:text-blue-500">Courses</a>
+      <a href="gallery.html" class="block py-2 border-b border-gray-200 hover:text-blue-500">Gallery</a>
+      <a href="book-demo.html" class="block py-2 border-b border-gray-200 hover:text-blue-500">Book Demo</a>
+      <a href="contact.html" class="block py-2 hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Toggle script -->
+<script>
+  document.getElementById('menu-btn').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Shrink header more on scroll
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('main-header');
+    const contactRow = header.querySelector('.contact-row');
+    const logoRow = header.querySelector('.logo-row');
+
+    if (window.scrollY > 100) {
+      header.classList.add('scale-90');
+      contactRow.classList.add('hidden');
+      logoRow.classList.add('py-2');
+    } else {
+      header.classList.remove('scale-90');
+      contactRow.classList.remove('hidden');
+      logoRow.classList.remove('py-2');
+    }
+  });
+</script>
+
+  <!-- Demo Section -->
+  <section class="py-10 px-4 md:px-0 max-w-3xl mx-auto ">
+    <div class="mt-[130px]">
+    <h2 class="text-4xl font-bold text-center text-blue-700 mb-4">Join Our Free Offline Demo Class!</h2>
+    <p class="text-center text-gray-600 mb-6">Experience real learning in our classroom before you enroll. Our expert trainers and interactive sessions will boost your confidence.</p>
+
+    <div class="bg-gray-100 rounded-lg shadow-md p-6">
+      <form class="space-y-4">
+        <div>
+          <label class="block mb-1 font-medium">Full Name</label>
+          <input type="text" class="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium">Phone Number</label>
+          <input type="tel" class="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g. 9876543210" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium">Preferred Date</label>
+          <input type="date" class="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium">Preferred Time</label>
+          <select class="w-full border rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            <option>Morning (9 AM - 11 AM)</option>
+            <option>Afternoon (1 PM - 3 PM)</option>
+            <option>Evening (5 PM - 7 PM)</option>
+          </select>
+        </div>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded text-lg font-semibold">
+          Book My Free Demo
+        </button>
+      </form>
+    </div>
+
+    <div class="text-center mt-8">
+      <p class="text-lg font-medium">📍 Visit us: Hadapsar, Pune</p>
+      <p class="mt-1">📞 Call us: <a href="tel:9876543210" class="text-blue-600 underline">98765 43210</a></p>
+      <p class="mt-1">💬 WhatsApp: <a href="https://wa.me/919876543210" class="text-green-600 underline">Chat Now</a></p>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+<!-- ✅ 11. Contact Us CTA Footer -->
+<footer id="contact" class="bg-blue-700 text-white pt-8 px-4">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-8">
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-xl font-semibold mb-2">📍 Address</h3>
+      <p>Fluent English Institute</p>
+      <p>Opp. XYZ Landmark, Hadapsar, Pune - 411028</p>
+      <p class="mt-2">📞 +91 98765 43210</p>
+      <p>info@spokenenglishhadapsar.com</p>
+      <!-- Right: Social Media -->
+<div class="flex flex-wrap justify-center sm:justify-start gap-5 mt-5 text-xl text-white">
+  <a href="https://facebook.com" target="_blank" class="text-blue-500" >
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="text-pink-500">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://youtube.com" target="_blank" class="text-red-600">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://wa.me/919876543210" target="_blank" class="text-green-600">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+    </div>
+
+    <!-- Pages Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 border-b border-white pb-1 uppercase">📄 Pages</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="block border-b border-white pb-1 hover:text-yellow-300">› Home</a></li>
+        <li><a href="about.html" class="block border-b border-white pb-1 hover:text-yellow-300">› About Us</a></li>
+        <li><a href="services.html" class="block border-b border-white pb-1 hover:text-yellow-300">› Services</a></li>
+        <li><a href="courses.html" class="block border-b border-white pb-1 hover:text-yellow-300">› Courses</a></li>
+        <li><a href="gallery.html" class="block border-b border-white pb-1 hover:text-yellow-300">› Gallery</a></li>
+        <li><a href="testimonials.html" class="block border-b border-white pb-1 hover:text-yellow-300">› Testimonials</a></li>
+        <li><a href="contact.html" class="block border-b border-white pb-1 hover:text-yellow-300">› Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Home Section Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 border-b border-white pb-1 uppercase">🧭 Home Sections</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#hero" class="block border-b border-white pb-1 hover:text-yellow-300">› Home</a></li>
+        <li><a href="#exam" class="block border-b border-white pb-1 hover:text-yellow-300">› Exam Preparation</a></li>
+        <li><a href="#why-english" class="block border-b border-white pb-1 hover:text-yellow-300">› Why Learn English</a></li>
+        <li><a href="#why-us" class="block border-b border-white pb-1 hover:text-yellow-300">› Why We're Different</a></li>
+        <li><a href="#form" class="block border-b border-white pb-1 hover:text-yellow-300">› Inquiry Form</a></li>
+        <li><a href="#testimonials" class="block border-b border-white pb-1 hover:text-yellow-300">› Testimonials</a></li>
+        <li><a href="#international-exams" class="block border-b border-white pb-1 hover:text-yellow-300">› International Exams</a></li>
+        <li><a href="#certified-students" class="block border-b border-white pb-1 hover:text-yellow-300">› Certified Students</a></li>
+      </ul>
+    </div>
+
+    <!-- Map Location -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 border-b border-white pb-1 uppercase">🗺️ Find Us</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.621772684094!2d73.9330934752843!3d18.500783869778118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1f80b0a0b6b%3A0x12fdaed05e4e0bdb!2sAvensys%20Spoken%20English%20IELTS%20PTE%20TOEFL%20GRE%20%26%20Personality%20Development%20Offline%20%26%20Online%20Classes!5e0!3m2!1sen!2sin!4v1749755757342!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Copyright -->
+  <div class="bg-blue-900 text-center py-4 mt-8">
+    <p class="text-sm">&copy; 2025 Fluent English. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
